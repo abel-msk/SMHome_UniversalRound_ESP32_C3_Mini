@@ -5,6 +5,7 @@
 	(uuid "9aefcc08-73d4-4a73-8d94-9ad5141c5ec6")
 	(paper "A4")
 	(title_block
+		(title "Universal board.  ESP-C3")
 		(date "2023-10-01")
 		(rev "12")
 	)
@@ -42,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf"
+			(property "Datasheet" "https://static.chipdip.ru/lib/260/DOC015260195.pdf"
 				(at 0 -18.288 0)
 				(effects
 					(font
@@ -1486,31 +1487,25 @@
 		)
 	)
 	(junction
-		(at 171.45 87.63)
+		(at 167.64 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "197951c6-eae9-4eac-83ce-a0513608f002")
+		(uuid "447275b1-0fd6-4582-80aa-c569131c8db4")
 	)
 	(junction
-		(at 168.275 87.63)
+		(at 167.64 104.775)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "316c7663-a760-4fe1-839d-6bd5fc2281b9")
+		(uuid "648f5752-afb9-4a73-a7ea-7254ce94ac36")
 	)
 	(junction
-		(at 204.47 87.63)
+		(at 200.66 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69c2abbb-69ef-40fb-aec6-8f375ce2dbdc")
 	)
 	(junction
-		(at 168.275 104.775)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "726f231e-a08c-49a8-ac22-c42c8f721283")
-	)
-	(junction
-		(at 186.055 80.01)
+		(at 182.245 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ff2658e-d0b7-48f2-8010-5b93e8f380c9")
@@ -1534,6 +1529,12 @@
 		(uuid "b69fcd03-bc57-4dd7-aa24-9fabcf4c0420")
 	)
 	(junction
+		(at 173.355 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ceb3675e-ecee-4461-a007-3c691383302c")
+	)
+	(junction
 		(at 116.205 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1541,27 +1542,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 87.63) (xy 180.975 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "007f2086-dbf7-471a-b2d4-6faa71fca26d")
-	)
-	(wire
-		(pts
-			(xy 168.275 87.63) (xy 171.45 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "058b15c9-4bc8-4d07-a06a-408b2a134015")
-	)
-	(wire
-		(pts
-			(xy 168.275 103.505) (xy 168.275 104.775)
+			(xy 167.64 102.235) (xy 167.64 104.775)
 		)
 		(stroke
 			(width 0)
@@ -1571,7 +1552,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.055 80.01) (xy 187.325 80.01)
+			(xy 182.245 80.01) (xy 183.515 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1591,7 +1572,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 87.63) (xy 171.45 96.52)
+			(xy 173.355 87.63) (xy 173.355 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1601,7 +1582,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 80.01) (xy 204.47 87.63)
+			(xy 200.66 80.01) (xy 200.66 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1611,7 +1592,17 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 99.06) (xy 201.93 104.775)
+			(xy 167.64 87.63) (xy 173.355 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "378abb69-4f7b-45e6-a110-aa79f86ead75")
+	)
+	(wire
+		(pts
+			(xy 198.12 99.06) (xy 198.12 104.775)
 		)
 		(stroke
 			(width 0)
@@ -1621,7 +1612,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 96.52) (xy 201.93 96.52)
+			(xy 167.64 104.775) (xy 198.12 104.775)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e1d1adb-38d6-4cde-82e6-586dd72596a6")
+	)
+	(wire
+		(pts
+			(xy 173.355 96.52) (xy 198.12 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1651,7 +1652,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.145 80.01) (xy 186.055 80.01)
+			(xy 144.145 80.01) (xy 182.245 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1671,7 +1672,17 @@
 	)
 	(wire
 		(pts
-			(xy 194.945 80.01) (xy 204.47 80.01)
+			(xy 173.355 87.63) (xy 177.165 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca9098e-fc96-47dc-a075-089d1d75a301")
+	)
+	(wire
+		(pts
+			(xy 191.135 80.01) (xy 200.66 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1701,23 +1712,13 @@
 	)
 	(wire
 		(pts
-			(xy 191.135 87.63) (xy 194.31 87.63)
+			(xy 187.325 87.63) (xy 190.5 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "affe4857-a70c-430d-85d9-333552461aab")
-	)
-	(wire
-		(pts
-			(xy 201.93 104.775) (xy 168.275 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b669d2ca-c0af-4392-b165-9e272e00a344")
 	)
 	(wire
 		(pts
@@ -1731,7 +1732,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 87.63) (xy 209.55 87.63)
+			(xy 200.66 87.63) (xy 205.74 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1741,7 +1742,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 87.63) (xy 204.47 87.63)
+			(xy 198.12 87.63) (xy 200.66 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1761,7 +1762,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.275 87.63) (xy 161.29 87.63)
+			(xy 161.29 87.63) (xy 167.64 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1781,7 +1782,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.275 104.775) (xy 144.145 104.775)
+			(xy 144.145 104.775) (xy 167.64 104.775)
 		)
 		(stroke
 			(width 0)
@@ -1791,7 +1792,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.275 98.425) (xy 168.275 87.63)
+			(xy 167.64 97.155) (xy 167.64 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1811,7 +1812,7 @@
 	)
 	(text "Alternatice Diodes\n1N5817WS\nMBR130LSFT1G"
 		(exclude_from_sim no)
-		(at 184.785 67.945 0)
+		(at 180.975 67.945 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1822,7 +1823,7 @@
 	)
 	(hierarchical_label "VCC"
 		(shape output)
-		(at 209.55 87.63 0)
+		(at 205.74 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1852,7 +1853,7 @@
 		(dnp no)
 		(uuid "08d9bb25-e2e9-433f-901a-22ed03d7c48a")
 		(property "Reference" "U4"
-			(at 139.7 75.565 0)
+			(at 133.985 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1861,7 +1862,7 @@
 			)
 		)
 		(property "Value" "MCP73831/2"
-			(at 139.7 78.105 0)
+			(at 130.175 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1880,7 +1881,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf"
+		(property "Datasheet" "https://static.chipdip.ru/lib/260/DOC015260195.pdf"
 			(at 144.145 108.458 0)
 			(effects
 				(font
@@ -2004,7 +2005,7 @@
 	)
 	(symbol
 		(lib_id "Diode_Local:1N5819")
-		(at 198.12 87.63 180)
+		(at 194.31 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2012,7 +2013,7 @@
 		(dnp no)
 		(uuid "2b3132a0-f080-49fa-a06a-7374b2a22103")
 		(property "Reference" "D4"
-			(at 198.12 81.915 0)
+			(at 194.31 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2020,7 +2021,7 @@
 			)
 		)
 		(property "Value" "1N5817WS"
-			(at 198.12 84.455 0)
+			(at 194.31 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2028,7 +2029,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 198.12 84.455 0)
+			(at 194.31 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2037,7 +2038,7 @@
 			)
 		)
 		(property "Datasheet" "https://static.chipdip.ru/lib/369/DOC004369797.pdf"
-			(at 198.12 94.615 0)
+			(at 194.31 94.615 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,7 +2047,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.12 87.63 0)
+			(at 194.31 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2055,7 +2056,7 @@
 			)
 		)
 		(property "descr" "Low Vf"
-			(at 198.12 90.17 0)
+			(at 194.31 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,7 +2080,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 207.01 99.06 0)
+		(at 203.2 99.06 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2088,7 +2089,7 @@
 		(dnp no)
 		(uuid "45512992-8f05-482a-8e12-18e286cc9a1d")
 		(property "Reference" "J8"
-			(at 210.185 99.0601 0)
+			(at 206.375 99.0601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2097,7 +2098,7 @@
 			)
 		)
 		(property "Value" "Bat"
-			(at 210.185 96.5201 0)
+			(at 206.375 96.5201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +2107,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
-			(at 207.01 99.06 0)
+			(at 203.2 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2115,7 +2116,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 99.06 0)
+			(at 203.2 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2124,7 +2125,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 207.01 99.06 0)
+			(at 203.2 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2134,7 @@
 			)
 		)
 		(property "descr" ""
-			(at 207.01 99.06 0)
+			(at 203.2 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,7 +2242,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 168.275 100.965 0)
+		(at 167.64 99.695 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2250,7 +2251,7 @@
 		(fields_autoplaced yes)
 		(uuid "700ebccb-822a-40b7-b387-5aa5c49ecf22")
 		(property "Reference" "C8"
-			(at 170.815 99.7012 0)
+			(at 170.18 98.4312 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2259,7 +2260,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 170.815 102.2412 0)
+			(at 170.18 100.9712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,7 +2269,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 168.275 100.965 0)
+			(at 167.64 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2277,7 +2278,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.275 100.965 0)
+			(at 167.64 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2286,7 +2287,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 168.275 100.965 0)
+			(at 167.64 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2295,7 +2296,7 @@
 			)
 		)
 		(property "descr" ""
-			(at 168.275 100.965 0)
+			(at 167.64 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2491,16 +2492,15 @@
 	)
 	(symbol
 		(lib_id "Diode_Local:1N5819")
-		(at 191.135 80.01 180)
+		(at 187.325 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ac685c0b-484f-4111-9ec2-4d7667646500")
 		(property "Reference" "D2"
-			(at 191.4525 73.66 0)
+			(at 187.6425 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2508,7 +2508,7 @@
 			)
 		)
 		(property "Value" "1N5817WS"
-			(at 191.4525 76.2 0)
+			(at 187.6425 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,7 +2516,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 191.135 76.835 0)
+			(at 187.325 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,7 +2525,7 @@
 			)
 		)
 		(property "Datasheet" "https://static.chipdip.ru/lib/369/DOC004369797.pdf"
-			(at 191.135 86.995 0)
+			(at 187.325 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2534,7 +2534,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 191.135 80.01 0)
+			(at 187.325 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,8 +2542,8 @@
 				(hide yes)
 			)
 		)
-		(property "descr" ""
-			(at 191.135 80.01 0)
+		(property "descr" "Low Vf"
+			(at 187.325 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +2639,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRLML6402")
-		(at 186.055 85.09 270)
+		(at 182.245 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2648,7 +2648,7 @@
 		(fields_autoplaced yes)
 		(uuid "fce4234d-49fd-4b71-803a-bd7e8ff3db94")
 		(property "Reference" "Q1"
-			(at 186.055 91.44 90)
+			(at 182.245 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2656,7 +2656,7 @@
 			)
 		)
 		(property "Value" "IRLML6402"
-			(at 186.055 93.98 90)
+			(at 182.245 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,7 +2664,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 184.15 90.17 0)
+			(at 180.34 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,7 +2675,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c"
-			(at 182.245 90.17 0)
+			(at 178.435 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,7 +2685,7 @@
 			)
 		)
 		(property "Description" "-3.7A Id, -20V Vds, 65mOhm Rds, P-Channel HEXFET Power MOSFET, SOT-23"
-			(at 186.055 85.09 0)
+			(at 182.245 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)

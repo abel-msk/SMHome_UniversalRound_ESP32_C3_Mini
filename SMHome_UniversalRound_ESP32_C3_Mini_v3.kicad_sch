@@ -5,7 +5,7 @@
 	(uuid "1a9f0d73-6986-450b-8da5-dca8d718cd0d")
 	(paper "A4")
 	(title_block
-		(title "Smart home relay board.")
+		(title "Universal board.  ESP-C3")
 		(date "2023-10-01")
 		(rev "12")
 		(company "Home")
@@ -1293,9 +1293,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1343,7 +1343,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1393,8 +1393,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1413,9 +1413,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1463,7 +1463,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1513,8 +1513,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1778,6 +1778,20 @@
 		(color 0 0 0 0)
 		(uuid "b7edd279-daec-47a0-a041-95653cd9f95b")
 	)
+	(no_connect
+		(at 52.705 68.58)
+		(uuid "09d1d01c-2daf-4298-a89c-7df5abc4c1f5")
+	)
+	(wire
+		(pts
+			(xy 252.095 80.645) (xy 245.11 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0152836f-cc0f-4c1b-9051-de4eccf84a4c")
+	)
 	(wire
 		(pts
 			(xy 110.49 66.04) (xy 110.49 68.58)
@@ -1810,7 +1824,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.675 89.535) (xy 66.675 86.36)
+			(xy 66.675 88.265) (xy 66.675 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1837,6 +1851,16 @@
 			(type default)
 		)
 		(uuid "26f69de6-dbdf-42cc-9310-cb14f1164326")
+	)
+	(wire
+		(pts
+			(xy 252.095 76.835) (xy 252.095 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c6b8272-8cb9-431d-81d9-65272742e3d8")
 	)
 	(wire
 		(pts
@@ -2302,6 +2326,50 @@
 		)
 		(uuid "d0a84854-ff3a-4296-af25-483937f90e9c")
 	)
+	(global_label "ADC3"
+		(shape input)
+		(at 245.11 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "04088071-98c1-4746-94f1-59ac02fd9449")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.9333 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ADC2"
+		(shape input)
+		(at 245.11 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "052ffca2-4bab-4f3a-bdad-79b54150754b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.9333 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ADC1"
 		(shape input)
 		(at 52.705 73.66 180)
@@ -2588,6 +2656,28 @@
 			)
 		)
 	)
+	(global_label "ADC1"
+		(shape input)
+		(at 245.11 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "86729025-d388-4ac7-8472-4797213bd519")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.9333 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDA"
 		(shape input)
 		(at 158.115 76.2 180)
@@ -2818,6 +2908,15 @@
 				(hide yes)
 			)
 		)
+		(property "descr" ""
+			(at 227.965 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f09e81f1-220f-4481-87e7-0ba554a92959")
 		)
@@ -3020,7 +3119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 163.195 65.405 0)
 			(effects
 				(font
@@ -3045,8 +3144,8 @@
 		(lib_id "Connector:TestPoint")
 		(at 66.04 23.495 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3094,6 +3193,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 66.04 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3338,13 +3445,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 252.73 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 252.73 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3461,6 +3576,79 @@
 			(project "SMHome_2RelayBoardRound_ESP32_C3_Mini_v1"
 				(path "/1a9f0d73-6986-450b-8da5-dca8d718cd0d"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 252.095 76.835 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73141f9f-00eb-4de8-ac5a-d8a1b04c9d04")
+		(property "Reference" "#PWR09"
+			(at 252.095 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 252.095 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.095 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.095 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 252.095 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 252.095 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbb1ccba-956d-4e0b-b937-65735ab9cf5c")
+		)
+		(instances
+			(project "SMHome_UniversalRound_ESP32_C3_Mini_v3"
+				(path "/1a9f0d73-6986-450b-8da5-dca8d718cd0d"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3646,7 +3834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 156.845 127.635 0)
 			(effects
 				(font
@@ -3671,8 +3859,8 @@
 		(lib_id "Connector:TestPoint")
 		(at 48.895 24.13 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3720,6 +3908,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 48.895 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3778,7 +3974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 64.135 38.735 0)
 			(effects
 				(font
@@ -3851,6 +4047,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 260.35 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3974,7 +4178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 97.79 51.435 0)
 			(effects
 				(font
@@ -3999,8 +4203,8 @@
 		(lib_id "Connector:TestPoint")
 		(at 80.01 23.495 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4048,6 +4252,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 80.01 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4207,7 +4419,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 66.675 89.535 0)
+		(at 66.675 88.265 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4216,7 +4428,7 @@
 		(fields_autoplaced yes)
 		(uuid "d723200e-1636-4eff-ac9f-644e839b7a5a")
 		(property "Reference" "#PWR07"
-			(at 66.675 95.885 0)
+			(at 66.675 94.615 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4437,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.675 94.615 0)
+			(at 66.675 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4233,7 +4445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.675 89.535 0)
+			(at 66.675 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4242,7 +4454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.675 89.535 0)
+			(at 66.675 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4251,7 +4463,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.675 89.535 0)
+			(at 66.675 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4355,11 +4567,86 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 34.925 24.13 0)
+		(lib_id "power:GND")
+		(at 228.6 98.425 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec22d9dd-9361-4c3e-800d-78a68f377eb0")
+		(property "Reference" "#PWR031"
+			(at 228.6 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 228.6 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8f92767-f904-476f-87b5-ce393ca90d49")
+		)
+		(instances
+			(project "SMHome_UniversalRound_ESP32_C3_Mini_v3"
+				(path "/1a9f0d73-6986-450b-8da5-dca8d718cd0d"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 34.925 24.13 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -4407,6 +4694,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "descr" ""
+			(at 34.925 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4473,7 +4768,7 @@
 			(uuid "6ba9ccc3-3934-4f0d-88c3-4da69dbfaff7")
 		)
 		(pin "+3V3" input
-			(at 226.06 76.835 90)
+			(at 245.11 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4540,7 +4835,7 @@
 				(hide yes)
 			)
 		)
-		(pin "GND" output
+		(pin "GND" input
 			(at 227.965 63.5 270)
 			(effects
 				(font

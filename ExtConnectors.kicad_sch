@@ -5,6 +5,7 @@
 	(uuid "d7bb797a-6131-4b58-ba68-539f16f5a815")
 	(paper "A4")
 	(title_block
+		(title "Universal board.  ESP-C3")
 		(date "2023-10-01")
 		(rev "12")
 	)
@@ -1093,11 +1094,11 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1110,7 +1111,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3V3"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1136,7 +1137,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1145,7 +1146,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1154,7 +1155,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1192,11 +1193,11 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2285,17 +2286,6 @@
 			)
 		)
 	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 179.07 112.395 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2ceec8ba-8279-4859-b095-20dc344ddd3b")
-	)
 	(hierarchical_label "ADC3"
 		(shape output)
 		(at 139.065 99.06 270)
@@ -2317,6 +2307,28 @@
 				(justify right)
 			)
 		)
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 175.895 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "862c8fdb-6170-4007-88e5-7d91447dae9b")
+	)
+	(hierarchical_label "+3V3"
+		(shape input)
+		(at 173.355 55.245 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf7aa8da-b5fd-404a-8d58-b11db87c89ae")
 	)
 	(hierarchical_label "ADC2"
 		(shape output)
@@ -3689,71 +3701,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 173.355 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e7b3b914-6fbb-46c2-85e3-87f9a6107e17")
-		(property "Reference" "#PWR09"
-			(at 173.355 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 173.355 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.355 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.355 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 173.355 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb37ed5e-fd17-44f0-9d0e-060a68d59a18")
-		)
-		(instances
-			(project "SMHome_2RelayBoardRound_ESP32_C3_Mini_v1"
-				(path "/1a9f0d73-6986-450b-8da5-dca8d718cd0d/26ba38b8-de6a-4290-840f-c0381062839e"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 175.895 160.655 0)
 		(unit 1)
@@ -3814,6 +3761,72 @@
 			(project "SMHome_2RelayBoardRound_ESP32_C3_Mini_v1"
 				(path "/1a9f0d73-6986-450b-8da5-dca8d718cd0d/26ba38b8-de6a-4290-840f-c0381062839e"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 173.355 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f02d2e88-e89b-4d2b-adb2-8147f1ccb905")
+		(property "Reference" "#PWR030"
+			(at 173.355 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 173.355 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.355 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.355 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 173.355 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30a31795-725f-4ae3-9cfe-353a2ec21b50")
+		)
+		(instances
+			(project ""
+				(path "/1a9f0d73-6986-450b-8da5-dca8d718cd0d/26ba38b8-de6a-4290-840f-c0381062839e"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
