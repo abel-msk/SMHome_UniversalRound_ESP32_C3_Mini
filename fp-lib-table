@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SHMBRL3")(type "KiCad")(uri "$(KIPRJMOD)/SMHome_UniversalRound_ESP32_C3_Mini_v3.pretty")(options "")(descr ""))
+)
