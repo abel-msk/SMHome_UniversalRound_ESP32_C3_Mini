@@ -6,4 +6,4 @@ it steel can bee plcad in its own box  znd powered by usb.
 
 3D view on top of board
 
-![](/assets/images/3dview.png)
+![3dview](/images/3dview.png)
