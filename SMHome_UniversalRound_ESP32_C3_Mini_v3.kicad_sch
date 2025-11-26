@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "1a9f0d73-6986-450b-8da5-dca8d718cd0d")
 	(paper "A4")
 	(title_block
@@ -12,9 +12,13 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -112,10 +116,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -182,19 +189,19 @@
 			)
 			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -215,8 +222,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -226,14 +233,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -309,10 +316,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic:Conn_01x09"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -379,74 +389,19 @@
 			)
 			(symbol "Conn_01x09_1_1"
 				(rectangle
-					(start -1.27 -10.033)
-					(end 0 -10.287)
+					(start -1.27 11.43)
+					(end 1.27 -11.43)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
+					(start -1.27 10.287)
+					(end 0 10.033)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -467,8 +422,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 10.287)
-					(end 0 10.033)
+					(start -1.27 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -478,14 +433,69 @@
 					)
 				)
 				(rectangle
-					(start -1.27 11.43)
-					(end 1.27 -11.43)
+					(start -1.27 2.667)
+					(end 0 2.413)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
@@ -651,11 +661,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -773,6 +788,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MCU_Module_local:ESP32_C3_Pro_Mini"
 			(exclude_from_sim no)
@@ -832,106 +848,16 @@
 			)
 			(symbol "ESP32_C3_Pro_Mini_1_0"
 				(pin unspecified line
-					(at -13.97 -10.16 0)
+					(at -13.97 0 0)
 					(length 2.54)
-					(name "GPIO0/A0"
+					(name "GPIO4/A4"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -13.97 -7.62 0)
-					(length 2.54)
-					(name "GPIO1/A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 13.97 -5.08 180)
-					(length 2.54)
-					(name "GPIO10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -13.97 -5.08 0)
-					(length 2.54)
-					(name "GPIO2/A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 13.97 -7.62 180)
-					(length 2.54)
-					(name "GPIO20/RX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 13.97 -10.16 180)
-					(length 2.54)
-					(name "GPIO21/TX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -958,16 +884,106 @@
 					)
 				)
 				(pin unspecified line
-					(at -13.97 0 0)
+					(at -13.97 -5.08 0)
 					(length 2.54)
-					(name "GPIO4/A4"
+					(name "GPIO2/A2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 -7.62 0)
+					(length 2.54)
+					(name "GPIO1/A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -13.97 -10.16 0)
+					(length 2.54)
+					(name "GPIO0/A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 20.32 270)
+					(length 2.54)
+					(name "P1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "P3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -22.86 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 3.81 20.32 270)
+					(length 2.54)
+					(name "VCC_5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "P5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1066,16 +1082,16 @@
 					)
 				)
 				(pin unspecified line
-					(at -2.54 20.32 270)
+					(at 13.97 -5.08 180)
 					(length 2.54)
-					(name "P1"
+					(name "GPIO10"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "P3"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1084,16 +1100,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 3.81 20.32 270)
+					(at 13.97 -7.62 180)
 					(length 2.54)
-					(name "VCC_5V"
+					(name "GPIO20/RX"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "P5"
+					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1102,16 +1118,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 -22.86 90)
+					(at 13.97 -10.16 180)
 					(length 2.54)
-					(name "GND"
+					(name "GPIO21/TX"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "PG"
+					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1133,11 +1149,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Power_Protection_Local:PESD3V3L1BA"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1205,6 +1226,18 @@
 			(symbol "PESD3V3L1BA_0_1"
 				(polyline
 					(pts
+						(xy -1.651 -1.016) (xy -0.127 0) (xy -1.651 1.016) (xy -1.651 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
 						(xy -0.506 -1.1163) (xy 0.002 -1.1163) (xy 0.002 0.9157)
 					)
 					(stroke
@@ -1225,18 +1258,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 -1.016) (xy -0.127 0) (xy -1.651 1.016) (xy -1.651 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(polyline
@@ -1290,12 +1311,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1367,7 +1393,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1379,7 +1405,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1410,12 +1436,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1487,7 +1518,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1499,7 +1530,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1530,6 +1561,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1609,7 +1641,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1626,12 +1659,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1703,7 +1741,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1715,7 +1753,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1746,7 +1784,122 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 144.145 40.005)
+		(end 187.96 95.885)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d2d85258-b25c-4381-806e-0cb31ef843c0)
+	)
+	(rectangle
+		(start 142.875 116.84)
+		(end 186.69 168.275)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e8ef1443-68c3-4f5f-875a-4cc9905a4ab0)
+	)
+	(text "SM04B-SRSS-TB - 4pin  - SR/SH - 1mm pich"
+		(exclude_from_sim no)
+		(at 167.64 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "030499c7-3799-4b7e-aabf-685dfbcf6635")
+	)
+	(text "Stemma / Stemma QT\n1-GND\n2-VCC\n3-SDA\n4-SCL\n--\nStemmaQt - JST SH\nStemma   - JST PH"
+		(exclude_from_sim no)
+		(at 150.495 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c4663f0-0821-4436-8d26-19e3167e0d4f")
+	)
+	(text "Power supply block 220v to 5v "
+		(exclude_from_sim no)
+		(at 212.725 55.245 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32e0ef23-a1ba-476e-965f-6022e86284d0")
+	)
+	(text "https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma"
+		(exclude_from_sim no)
+		(at 182.88 31.115 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "48babdc6-85f9-448c-8384-3f311b7f22ee")
+	)
+	(text "S8B-PH-SM4-TB - 8pin - PH - 2mm pich"
+		(exclude_from_sim no)
+		(at 142.875 170.815 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8236f7a2-cdb0-48f1-8955-39aee5d47569")
+	)
+	(text "I2C Connector (StemmaQT)"
+		(exclude_from_sim no)
+		(at 144.145 37.465 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "996f9f88-f35c-48fb-80c5-d955c97fbbbd")
+	)
+	(text "|Connector| ST7735S|  CHIP   |  Signal name\n--------------------------------\n|  1      |   8      | ----- | LED\n|  4      |   7      | GPIO 07 | CS (SS)= GPIO 07\n|  3      |   6      | GPIO 21 | RS (A0; DC; D/C) \n|  2      |   5      | GPIO 20 | RST\n|  6      |   4      | GPIO 06 | SDA (MOSI) \n|  7      | ----- | GPIO 05 | MISO               \n|  5      |   3      | GPIO 04 | SCK (SCK; SCLK)\n|  9      |   2      | ----- | VCC\n|  8      |   1      | ----- | GND"
+		(exclude_from_sim no)
+		(at 194.945 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba15b8a6-a1ab-4f74-a72b-40d77f54d813")
+	)
+	(text "Display SPI connector"
+		(exclude_from_sim no)
+		(at 142.875 114.3 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d0a84854-ff3a-4296-af25-483937f90e9c")
 	)
 	(junction
 		(at 97.79 55.245)
@@ -2211,120 +2364,6 @@
 			(type default)
 		)
 		(uuid "fc42ffd1-a68b-4fc0-b8eb-259286eec8eb")
-	)
-	(rectangle
-		(start 144.145 40.005)
-		(end 187.96 95.885)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid d2d85258-b25c-4381-806e-0cb31ef843c0)
-	)
-	(rectangle
-		(start 142.875 116.84)
-		(end 186.69 168.275)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid e8ef1443-68c3-4f5f-875a-4cc9905a4ab0)
-	)
-	(text "SM04B-SRSS-TB - 4pin  - SR/SH - 1mm pich"
-		(exclude_from_sim no)
-		(at 167.64 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "030499c7-3799-4b7e-aabf-685dfbcf6635")
-	)
-	(text "Stemma / Stemma QT\n1-GND\n2-VCC\n3-SDA\n4-SCL\n--\nStemmaQt - JST SH\nStemma   - JST PH"
-		(exclude_from_sim no)
-		(at 150.495 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1c4663f0-0821-4436-8d26-19e3167e0d4f")
-	)
-	(text "Power supply block 220v to 5v "
-		(exclude_from_sim no)
-		(at 212.725 55.245 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "32e0ef23-a1ba-476e-965f-6022e86284d0")
-	)
-	(text "https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma"
-		(exclude_from_sim no)
-		(at 182.88 31.115 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "48babdc6-85f9-448c-8384-3f311b7f22ee")
-	)
-	(text "S8B-PH-SM4-TB - 8pin - PH - 2mm pich"
-		(exclude_from_sim no)
-		(at 142.875 170.815 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8236f7a2-cdb0-48f1-8955-39aee5d47569")
-	)
-	(text "I2C Connector (StemmaQT)"
-		(exclude_from_sim no)
-		(at 144.145 37.465 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "996f9f88-f35c-48fb-80c5-d955c97fbbbd")
-	)
-	(text "|Connector| ST7735S|  CHIP   |  Signal name\n--------------------------------\n|  1      |   8      | ----- | LED\n|  4      |   7      | GPIO 07 | CS (SS)= GPIO 07\n|  3      |   6      | GPIO 21 | RS (A0; DC; D/C) \n|  2      |   5      | GPIO 20 | RST\n|  6      |   4      | GPIO 06 | SDA (MOSI) \n|  7      | ----- | GPIO 05 | MISO               \n|  5      |   3      | GPIO 04 | SCK (SCK; SCLK)\n|  9      |   2      | ----- | VCC\n|  8      |   1      | ----- | GND"
-		(exclude_from_sim no)
-		(at 194.945 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ba15b8a6-a1ab-4f74-a72b-40d77f54d813")
-	)
-	(text "Display SPI connector"
-		(exclude_from_sim no)
-		(at 142.875 114.3 0)
-		(effects
-			(font
-				(size 2 2)
-				(thickness 0.4)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "d0a84854-ff3a-4296-af25-483937f90e9c")
 	)
 	(global_label "ADC3"
 		(shape input)
@@ -4719,6 +4758,10 @@
 	(sheet
 		(at 212.09 76.835)
 		(size 33.02 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4749,53 +4792,53 @@
 		)
 		(pin "GND" input
 			(at 228.6 98.425 270)
+			(uuid "db7afd44-1c8d-4aca-8ca0-236a0dd8f9db")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "db7afd44-1c8d-4aca-8ca0-236a0dd8f9db")
 		)
 		(pin "ADC1" output
 			(at 245.11 87.63 0)
+			(uuid "6ba9ccc3-3934-4f0d-88c3-4da69dbfaff7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6ba9ccc3-3934-4f0d-88c3-4da69dbfaff7")
 		)
 		(pin "+3V3" input
 			(at 245.11 80.645 0)
+			(uuid "14b0be07-f9f9-4c78-82c1-5866af449767")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "14b0be07-f9f9-4c78-82c1-5866af449767")
 		)
 		(pin "ADC3" output
 			(at 245.11 92.71 0)
+			(uuid "235a46f0-e6e6-464e-938d-f1ad642f0901")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "235a46f0-e6e6-464e-938d-f1ad642f0901")
 		)
 		(pin "ADC2" output
 			(at 245.11 90.17 0)
+			(uuid "5fb1709e-49a1-4cb8-9bed-e392841d4392")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5fb1709e-49a1-4cb8-9bed-e392841d4392")
 		)
 		(instances
 			(project "SMHome_UniversalRound_ESP32_C3_Mini_v3"
@@ -4808,6 +4851,10 @@
 	(sheet
 		(at 212.09 40.64)
 		(size 33.02 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -4837,33 +4884,33 @@
 		)
 		(pin "GND" input
 			(at 227.965 63.5 270)
+			(uuid "f10f9021-c7cb-42a4-8731-b4fb8223556a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f10f9021-c7cb-42a4-8731-b4fb8223556a")
 		)
 		(pin "+3V3" output
 			(at 245.11 50.165 0)
+			(uuid "7fc18709-5852-44c7-9425-a44d7c17606b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7fc18709-5852-44c7-9425-a44d7c17606b")
 		)
 		(pin "VCC" output
 			(at 245.11 57.785 0)
+			(uuid "5932173d-d2d3-4d1f-bb5c-90f707ae666c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5932173d-d2d3-4d1f-bb5c-90f707ae666c")
 		)
 		(instances
 			(project "SMHome_UniversalRound_ESP32_C3_Mini_v3"
@@ -4878,4 +4925,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
